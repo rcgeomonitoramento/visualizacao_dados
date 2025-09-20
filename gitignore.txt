@@ -1,0 +1,98 @@
+# ------ Segredos e Configurações ------ #
+# AWS
+.aws/
+secrets.toml
+*.toml  # Bloqueia TODOS os arquivos TOML por segurança
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# Ambientes virtuais e variáveis
+.env
+.env*
+*.env
+venv/
+env/
+.venv/
+
+credentials.yaml
+local_config.yaml
+*.secret.yaml
+
+# ------ Python ------ #
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ------ Dados Sensíveis ------ #
+*.parquet
+*.csv
+*.xlsx
+*.db
+*.sqlite
+*.pkl
+*.pickle
+
+# ------ Sistemas Operacionais ------ #
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+*~
+
+# ------ IDEs/Editores ------ #
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# ------ Outros ------ #
+# Logs e testes
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
+.mypy_cache/
